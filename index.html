@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, Music!</title>
+  </head>
+  <body>
+    
+    <div class="container m-3 p-3 border border-danger rounded">
+        <div class="row ">
+<div class="col">
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFloyd" aria-expanded="false" aria-controls="collapseFloyd">
+    Pink Floyd
+  </button>
+</p>
+<div class="collapse" id="collapseFloyd">
+  <div class="albumFloyd">
+        <div class="row" id="albumRow1"></div>
+      </div>
+</div>
+      
+      <hr/>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDaft" aria-expanded="false" aria-controls="collapseDaft">
+    Daft Punk
+  </button>
+</p>
+<div class="collapse" id="collapseDaft">
+  <div class="albumDaft">
+        <div class="row" id="albumRow2"></div>
+      </div>
+</div>
+      
+      <hr />
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMetallica" aria-expanded="false" aria-controls="collapseMetallica">
+    Metallica
+  </button>
+</p>
+<div class="collapse" id="collapseMetallica">
+  <div class="albumMetallica">
+        <div class="row" id="albumRow3"></div>
+      </div>
+</div>
+</div>
+        </div>
+        
+      
+    </div>
+    <button type="button" class="btn btn-primary btn-sm" id="count" onClick = "countUnique()">Count Unique</button>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+
+
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="counter">
+
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" id="addList" data-target="addedList" onClick = "displayList()">Song List</button>
+<!-- Modal -->
+<div class="modal fade" id="addedList" tabindex="-1" role="dialog" aria-labelledby="addedListLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addedListLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+        <ol id="list"></ol>
+    </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </body>
+</html>
